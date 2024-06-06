@@ -30,7 +30,7 @@ There are two APIs implemented.
 <b> Product List API</b>: http://localhost:8086/api/product
 </br><b>Method</b>: GET
 
-<b>Requset Body:</b> empty
+<b>Request Body:</b> empty
 
 <b>Response:</b> 
 ```
@@ -49,3 +49,45 @@ There are two APIs implemented.
     }
 ]
 ```
+
+### API (Order Service module)
+There are only one API is implemented
+
+- Order API
+
+<b>Order API:</b> http://localhost:8081/api/order
+<br><b>Method:</b> POST
+
+<b>Request Body:</b>
+```
+{
+    "orderLineItemsDtoList":[
+        {
+            "skuCode": "IPhone 13",
+            "price": 1200,
+            "quantity": 10
+        },
+        {
+            "skuCode": "IPhone 12",
+            "price": 1200,
+            "quantity": 100
+        }
+    ]
+}
+```
+
+<b>Response:</b> Order Placed Successfully
+
+### API (Inventory Service module)
+There are only one API is implemented
+
+- Inventory API
+
+<b>Order API:</b> http://localhost:8081/api/order
+<br><b>Method:</b> 
+
+<b>Request Body:</b>
+```
+```
+
+<b>Response:</b>
